@@ -1,0 +1,184 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #422100; /* ROSS IT BROWN */
+  background-image: url(../images/hero_bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-image: url(../images/header_bg.png);
+  background-size: cover;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header .left {
+}
+
+header .left a {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+header .left img {
+  width: 100%;
+  object-fit: contain;
+}
+
+header .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin: 0 25px 0 0;
+}
+
+header .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+nav {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav > a {
+  color: #422100; /* ROSS IT BROWN */
+  text-decoration: none;
+  margin-left: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+nav > a:hover {
+  color: #00c3ff;
+  cursor: pointer;
+}
+
+nav > a.dropdown::after {
+  content: url('../images/chevron_right.svg');
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+  margin: 0 0 0 10px;
+}
+
+nav > a.dropdown:hover::after {
+  content: url('../images/chevron_down.svg');
+}
+
+.phone {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  flex-grow: 1;
+  line-height: 24px;
+}
+
+.phone a {
+  text-decoration: none;
+  color: #422100;
+}
+
+.help-desk-button a {
+  border-radius: 10px;
+  background-color: #fdb312;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #422100;
+  text-decoration: none;
+  font-size: 36px;
+  box-shadow: 5px 5px 0 rgba(66, 33, 0, 1);
+  -webkit-box-shadow: 5px 5px 0 rgba(66, 33, 0, 1);
+  -moz-box-shadow: 5px 5px 0 rgba(66, 33, 0, 1);
+}
+
+.help-desk-button a:hover {
+  background-color: #ffc445;
+}
+
+#hero {
+  height: calc(100vh - 150px);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-content {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero h1 {
+  color: #fff;
+  font-size: 65px;
+  line-height: 80px;
+  font-weight: 500;
+}
+
+#hero h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 40px 0;
+}
+
+.hero-buttons a {
+  display: flex;
+  align-items: center;
+  color: #422100;
+  background-color: #fdb312;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 10px 10px 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons a:hover {
+  background-color: #ffc445;
+}
+
+.crew-photo {
+  display: flex;
+  justify-content: center;
+  height: 45%;
+}
+
+.crew-photo img {
+}
